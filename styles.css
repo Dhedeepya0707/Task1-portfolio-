@@ -1,0 +1,247 @@
+
+body {
+    background-size: 400% 400%;
+    border: 10px solid transparent;
+    border-image: url(borderhtmlproject1.webp) 30 round;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#myphoto {
+    display: block;
+    border: 1px solid #ffffff;
+    margin-top: 15px;
+    margin-right: 35px;
+    border-radius: 50%;
+    width: 250px;
+    height: 270px;
+    float: left;
+    transition: transform 0.5s ease;
+    margin-bottom: 30px;
+    animation: scaleUp 1.5s ease-in-out;
+}
+
+#myphoto:hover {
+    transform: scale(1.1);
+}
+
+#heading {
+    color: black;
+    font-size: 70px;
+    font-weight: bold;
+    margin-left: 14px;
+    margin-top: 20px;
+    margin-bottom: -3px;
+}
+
+.myself {
+    text-decoration: underline;
+    color: #81AA68;
+}
+
+.aboutme {
+    font-size: 20px;
+    font-weight: 550;
+    margin-left: 40px;
+    margin-right: 50px;
+    line-height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#projects, #contactinfo, #resume {
+    margin-left: 0;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #81AA68;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.box {
+    display: inline-block;
+    color: #30d317;
+    border: 2px solid #463f3f;
+    border-radius: 20%;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.15);
+    margin: 10px;
+}
+
+.box:hover {
+    background: #D0E0F0;
+    transition: 1s;
+}
+
+#myself {
+    font-size: 40px;
+    margin-left: 45px;
+    color: black;
+    font-weight: bold;
+}
+
+.skills {
+    line-height: 40px;
+    font-size: 25px;
+    list-style: disc;
+    margin-top: -30px;
+    margin-left: 20px;
+    padding-top: 10px;
+    background-color: #8dba71;
+    width: 100%;
+    height: 140px;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+
+#contact {
+    margin-left: 0;
+    font-size: larger;
+    text-align: center;
+}
+
+#line {
+    height: 2px;
+    background-color: #81AA68;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.link {
+    text-decoration: underline;
+    color: #81AA68;
+}
+
+#footer {
+    background-color: #81AA68;
+    color: beige;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 10px;
+}
+
+@keyframes fadeBackground {
+    0% { background: #ffffff; }
+    50% { background: #D7F8DA; }
+    100% { background: #ffffff; }
+}
+
+body {
+    animation: fadeBackground 11s infinite alternate;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #fff; }
+    50% { text-shadow: 0 0 20px #81AA68; }
+    100% { text-shadow: 0 0 5px #fff; }
+}
+
+.myself {
+    animation: glow 1s infinite alternate;
+}
+
+@media only screen and (max-width: 1200px) {
+    #myphoto {
+        width: 200px;
+        height: 220px;
+    }
+
+    #heading {
+        font-size: 60px;
+    }
+
+    .box {
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+
+    #projects, #contactinfo, #resume {
+        font-size: 30px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #myphoto {
+        width: 150px;
+        height: 170px;
+    }
+
+    #heading {
+        font-size: 50px;
+    }
+
+    .aboutme {
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .box {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+    #projects, #contactinfo, #resume {
+        font-size: 25px;
+    }
+
+    #contact {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #myphoto {
+        width: 120px;
+        height: 130px;
+    }
+
+    #heading {
+        font-size: 40px;
+    }
+
+    .aboutme {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .box {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    #projects, #contactinfo, #resume {
+        font-size: 20px;
+    }
+
+    #footer {
+        font-size: 20px;
+    }
+
+    #myself {
+        font-size: 30px;
+    }
+
+    .skills {
+        font-size: 20px;
+    }
+}

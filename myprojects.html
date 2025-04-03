@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            background-image: url(projbc.jpg);
+            background-position: center;
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .proj-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 30px;
+            margin-right: 40px;
+        }
+        .proj {
+            border: 3px solid #4E9F3D; 
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            background-color: #8dba71;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: beige;
+            font-size: 22px;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 20px;
+            position: relative;
+            cursor: pointer; 
+        }
+        #pro1 {
+            margin-right: 100px;
+        }
+        .proj-row {
+            display: flex;
+            gap: 20px; 
+            flex-wrap: wrap;
+            justify-content: flex-start; 
+        }
+        .proj:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); 
+        }
+        a {
+            text-decoration: none;
+            color: beige;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase; 
+            display: block;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #D0E0F0; 
+        }
+
+        .proj a {
+            z-index: 2;
+        } 
+        .proj a {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .proj-container {
+                gap: 20px;
+            }
+
+            .proj {
+                width: 200px;
+                height: 200px;
+                font-size: 18px;
+            }
+
+            .proj-row {
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .proj-container {
+                gap: 15px;
+            }
+
+            .proj {
+                width: 180px;
+                height: 180px;
+                font-size: 16px;
+            }
+
+            .proj-row {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="proj-container">
+        <div class="proj" id="pro1">
+            <a href="menu.jpg" target="_blank">A basic menu of a cafe</a>
+        </div>
+        <div class="proj-row">
+            <div class="proj" id="pro2">
+                <a href="basport.jpg" target="_blank">My basic portfolio</a>
+            </div>
+            <div class="proj" id="pro3">
+                <a href="webproj.jpg" target="_blank">A photography website</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
